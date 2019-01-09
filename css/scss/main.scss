@@ -1,8 +1,27 @@
 html {
-	background: grey;
+	background: black;
+	color: white;
 	cursor: none;
-}
+	margin:0;
+	padding: 0;
 
+}
+body {
+	margin:0;
+	padding: 0;
+}
+#scene {
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+	pointer-events: none;
+}
+#sceneBG {
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	pointer-events: none;
+}
 .rectred {
 	width: 50px;
 	height: 50px;
@@ -15,22 +34,30 @@ html {
 	position: absolute;
 	width: 150px;
 	height: 150px;
-	z-index: 1;
+	top: 285px;
+	z-index: 3;
 	border-radius: 100%;
-	animation: targetmoove 8s infinite;
+	animation: targetmoove 8s;
+	animation-iteration-count: 1;
 
 }
 @keyframes targetmoove {
 	0% {
-		left:-10%;
+		left:0%;
 	}
 	50% {
 		left:100%;
 	}
 	100% {
-		left:-10%;
+		left:0%;
+		display: none;
 	}
 }
 #ball svg {
 	pointer-events: none;
+	animation: targetmoove 8s;
+	animation-iteration-count: 1;
 }
+
+
+
