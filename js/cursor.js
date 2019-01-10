@@ -13,7 +13,6 @@ function logMouseMoveXY(e) {
 	
 	const width = window.innerWidth;
 	const height = window.innerHeight;
-	console.log(width,height);
 	let curseur = document.getElementById('cursor');
 	curseur.style.left = (X-25) + 'px';
 	// curseur.style.borderRadius = (((Y*100/height)/4)+((X*100/width)/4)) + '%';

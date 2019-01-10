@@ -2,7 +2,7 @@ let shoot = 0;
 
 function scoring() 
 { 
-shoot = shoot+1; 
+shoot = shoot++; 
 document.getElementById('nb').innerHTML = shoot; 
 
 } 

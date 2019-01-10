@@ -37,8 +37,14 @@ body {
   top: 150px;
   z-index: 3;
   border-radius: 100%;
-  animation: targetmoove 8s;
-  animation-iteration-count: 1; }
+  animation: targetmoove 18s infinite; }
+
+.show {
+  display: block; }
+
+.hidde {
+  display: none !important;
+  animation: none !important; }
 
 @keyframes targetmoove {
   0% {
@@ -46,10 +52,8 @@ body {
   50% {
     left: 100%; }
   100% {
-    left: 0%;
-    display: none; } }
+    left: 0%; } }
 #ball svg {
-  pointer-events: none;
-  animation: targetmoove 8s infinite; }
+  pointer-events: none; }
 
 /*# sourceMappingURL=main.css.map */
