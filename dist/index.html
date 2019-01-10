@@ -6,14 +6,17 @@
 	<link rel="stylesheet" href="../css/css/main.css">
 </head>
 <body>
-	<p>Sheeps Kidnapped : <span id='nb'>0</span></p> 
+	<p class="scorePan">Sheeps Sheepsnapped : <span id='nb'>0</span></p> 
 	<img src="../src/scene.svg" id="scene" alt="">
 	<div id="sceneBG"></div>
 
 
 
 	<div class="rectred" id="cursor"></div>
-	<div class="svg_ball" id="ball" onclick="scoring()"></div>
+	<div class="svg_ball" id="ball" onclick="scoring();playingscore()">
+		<div class="scoreItem" id="item"></div>
+	</div>
+	
 	
 
 

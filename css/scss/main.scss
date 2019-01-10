@@ -27,7 +27,7 @@ body {
 	height: 100vh;
 	position: absolute;
 	z-index: 5;
-	top: 0px;
+	top: 32px;
 	transform-origin: 25px 25px;
 	pointer-events: none;
 }
@@ -35,10 +35,20 @@ body {
 	position: absolute;
 	width: 150px;
 	height: 100vh;
-	top: 0px;
+	top: 45px;
 	z-index: 3;
 	border-radius: 100%;
-	animation: targetmoove 18s infinite;
+	animation: targetmoove 12s infinite;
+}
+.scoreItem {
+	position: absolute;
+	width: 80px;
+	height: 100vh;
+	top: 32px;
+	z-index: 3;
+	border-radius: 100%;
+	animation: targetmoove 12s infinite;
+	pointer-events: none;
 }
 
 .show {
@@ -64,5 +74,16 @@ body {
 	pointer-events: none;
 
 }
+.scorePan {
+	color: green;
+	font-size: 25px;
+	background: black;
+	border-radius: 15px 15px 15px 15px;
+	border: 1px solid white;
+	padding: 12px;
+	margin-left: 25px;
+	width: 33vw;
+	display: block;
 
+}
 
