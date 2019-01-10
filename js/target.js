@@ -12,11 +12,17 @@ let target = document.getElementById("ball");
 function addHide (){
 	target.classList.add("hidde");
 }
+function removeHide (){
+	target.classList.remove("hidde");
+	target.classList.add("show");
+	BallTarget.playSegments([1,20],true);
+}
 
 target.addEventListener("click", function( event ) {   
     // met en surbrillance la cible de mouseenter
      BallTarget.playSegments([80,100],true);
      setTimeout(addHide, 3000);
+     setTimeout(removeHide, 5000);
      
 });
 

@@ -23,19 +23,19 @@ body {
 	pointer-events: none;
 }
 .rectred {
-	width: 150px;
-	height: 1080px;
+	width: 190px;
+	height: 100vh;
 	position: absolute;
 	z-index: 5;
-	top: 150px;
+	top: 0px;
 	transform-origin: 25px 25px;
 	pointer-events: none;
 }
 .svg_ball {
 	position: absolute;
 	width: 150px;
-	height: 1080px;
-	top: 150px;
+	height: 100vh;
+	top: 0px;
 	z-index: 3;
 	border-radius: 100%;
 	animation: targetmoove 18s infinite;
