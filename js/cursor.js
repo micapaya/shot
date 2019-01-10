@@ -3,7 +3,7 @@ let pointer = bodymovin.loadAnimation({
 	container: document.getElementById('cursor'),
 	renderer: 'svg',
 	autoplay: false,
-	loop: false,
+	loop: true,
 	path: '../cursor.json',
 });
 function logMouseMoveXY(e) {
@@ -20,22 +20,28 @@ function logMouseMoveXY(e) {
 }
 
 
-
+function afterClick (){
+	pointer.playSegments([1,10],true);
+}
 
 let mirin = document.getElementById("ball");
 target.addEventListener("mouseenter", function( event ) {   
     // met en surbrillance la cible de mouseenter
-     pointer.playSegments([45,60],true);
+     pointer.goToAndStop(60, true);
+      setTimeout(afterClick, 500);
 });
 let mirout = document.getElementById("ball");
 target.addEventListener("mouseout", function( event ) {   
     // met en surbrillance la cible de mouseenter
      pointer.playSegments([60,45],true);
+      setTimeout(afterClick, 500);
 });
 
 let mirclic = document.getElementById("ball");
+
 target.addEventListener("click", function( event ) {   
     // met en surbrillance la cible de mouseenter
      pointer.playSegments([80,100],true);
+     setTimeout(afterClick, 500);
 });
 
