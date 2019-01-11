@@ -47,7 +47,8 @@ body {
   z-index: 3;
   border-radius: 100%;
   animation: targetmoove 12s infinite;
-  pointer-events: none; }
+  pointer-events: none;
+  text-align: center; }
 
 .show {
   display: block; }
@@ -69,12 +70,20 @@ body {
 .scorePan {
   color: green;
   font-size: 25px;
+  font-family: helvetica;
+  text-transform: uppercase;
   background: black;
-  border-radius: 15px 15px 15px 15px;
-  border: 1px solid white;
-  padding: 12px;
-  margin-left: 25px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
   width: 33vw;
   display: block; }
+
+.score_number {
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
