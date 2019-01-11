@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../css/css/main.css">
 </head>
 <body>
+	<audio src="../src/sound/FlyTo.mp3" class="sheepsound" id="backgroundSound" autoplay="true" loop="true" preload="auto"></audio>
 	<p class="scorePan"><span class="score_number" id='nb'> 0 </span>Sheeps flying to the moon </p> 
 	<img src="../src/svg/scene.svg" id="scene" alt="">
 	<div id="sceneBG"></div>
@@ -16,6 +17,7 @@
 	<div class="svg_ball" id="ball" onclick="scoring();playingscore();spaceSound()">
 		<audio src="../src/sound/sheep2.mp3" class="sheepsound" id="playerSheep"></audio>
 		<audio src="../src/sound/abduc.mp3" class="sheepsound" id="playerSpace"></audio>
+
 		<div class="scoreItem" id="item"></div>
 	</div>
 	
